@@ -502,6 +502,87 @@
         </div>
       </section>
     </main>
+    <div class="modal-overley">
+      <div class="modal">
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-logo" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form
+          class="modal-form"
+          name="form-contacts"
+          autocomplete="of"
+          novalidate
+        >
+          <div class="form-container">
+            <label class="form-label"> Name </label>
+            <div class="input-label">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="form-input"
+                autofocus
+              />
+              <svg class="person-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <label class="form-label">Phone</label>
+            <div class="input-label">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="form-input"
+                autofocus
+              />
+              <svg class="phone-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label class="form-label">Email</label>
+            <div class="input-label">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                autofocus
+              />
+              <svg class="email-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="form-label">Comment</label>
+            <div class="input-label-com">
+              <textarea
+                class="form-input-com"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+            <div class="checkbox-label">
+              <label
+                ><input type="checkbox" name="answer" value="" checked />
+              </label>
+              <p class="checkbox-text">
+                I accept the terms and conditions of the
+                <span class="checkbox-text-item"> Privacy Policy</span>
+              </p>
+            </div>
+            <button type="button" class="modal-btn-second rewiew-btn">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <footer class="page-footer">
       <div class="container footer-container">
@@ -558,6 +639,24 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-email">
+          <p class="footer-email-text">Subscribe</p>
+          <form class="footer-form" name="footer-form" autocomplete="of">
+            <label class="email-input"
+              ><input
+                class="email-input-form"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            /></label>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-logo" width="24" height="20">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
