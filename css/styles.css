@@ -884,7 +884,7 @@ li {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-input .input:checked {
+.input:checked + .label-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
