@@ -668,8 +668,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-
   opacity: 0;
+  overflow: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -677,6 +677,7 @@ li {
 
 .modal-overley.is-open {
   opacity: 1;
+  overflow: visible;
   pointer-events: auto;
 }
 
@@ -720,11 +721,13 @@ li {
 .modal-btn:hover {
   border: none;
   background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .modal-btn:focus {
   border: none;
   background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .modal-btn-logo {
@@ -784,7 +787,7 @@ li {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.person-icon {
+.label-icon {
   position: absolute;
   top: 50%;
   left: 16px;
@@ -797,62 +800,33 @@ li {
   border: 1px solid #4d5ae5;
 }
 
-.person-icon:hover,
-.person-icon:focus {
-  fill: #4d5ae5;
-}
-
-.phone-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone-icon:hover,
-.phone-icon:focus {
+.label-icon:hover,
+.label-icon:focus {
   fill: #4d5ae5;
 }
 
 .form-input-com {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
-  height: 120px;
-}
-
-.email-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-icon:hover,
-.email-icon:focus {
-  fill: #4d5ae5;
-}
-
-.input-label-com {
-  margin-bottom: 16px;
-}
-
-.form-input-com {
   width: 100%;
   height: 120px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
   background-color: transparent;
   padding: 8px 16px;
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-com:focus {
+  border-color: #4d5ae5;
+}
+
+.input-label-com {
+  margin-bottom: 16px;
 }
 
 .form-input-com::placeholder {
